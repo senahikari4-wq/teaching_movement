@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materi Teks - Teaching Movement</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-slate-800">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 border-b bg-yellow-400/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
+      <a href="index.html" class="font-bold">⬅ Kembali</a>
+      <h1 class="font-bold text-lg">Materi Teks</h1>
+    </div>
+  </header>
+
+  <!-- LIST PEMBAHASAN -->
+  <main class="mx-auto max-w-4xl px-6 py-10">
+    <h2 class="text-2xl font-bold text-yellow-500">Daftar Pembahasan</h2>
+    <div class="mt-6 space-y-6">
+
+      <!-- Fisika Dasar 1 -->
+      <div class="rounded-xl border p-5 shadow-sm hover:shadow-md">
+        <h3 class="text-xl font-semibold">FISIKA DASAR 1</h3>
+        <p class="mt-2 text-slate-700">Materi ini membahas konsep dasar vektor dan kinematika, termasuk gerak lurus, gerak melingkar, dan representasi vektor dalam fisika. Pemahaman materi ini sangat penting untuk mempelajari topik-topik lanjutan.</p>
+        <ul class="mt-3 list-disc pl-6 space-y-2 text-slate-700">
+          <li>
+            Vektor dan Kinematika <br>
+            <a href="https://youtu.be/abcd1234" target="_blank" class="text-yellow-600 underline">
+              🎥 Tonton Video
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Fisika Dasar 2 -->
+      <div class="rounded-xl border p-5 shadow-sm hover:shadow-md">
+        <h3 class="text-xl font-semibold">FISIKA DASAR 2</h3>
+        <p class="mt-2 text-slate-700">Materi ini membahas gaya dan medan listrik, termasuk hukum Coulomb, medan listrik akibat muatan, dan penerapan gaya listrik pada berbagai sistem. Materi ini akan membantu kamu memahami konsep kelistrikan dasar dalam fisika.</p>
+        <ul class="mt-3 list-disc pl-6 space-y-2 text-slate-700">
+          <li>
+            Gaya dan Medan Listrik <br>
+            <a href="https://youtu.be/efgh5678" target="_blank" class="text-yellow-600 underline">
+              🎥 Tonton Video
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t bg-yellow-400/20 py-6 text-center text-sm text-slate-600">
+    © <span id="year"></span> Teaching Movement
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

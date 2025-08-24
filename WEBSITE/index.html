@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teaching Movement</title>
+  <meta name="description" content="Bimbingan belajar untuk mahasiswa — pengetahuan umum, materi teks, video, dan gambar." />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Style -->
+  <style>
+    :root {
+      --soft-blue: #E7F1FF;
+      --brand: #3B82F6;
+      --brand-dark: #1E40AF;
+    }
+    html, body {
+      font-family: 'Poppins', system-ui, Segoe UI, Roboto, Arial, sans-serif;
+    }
+    .glass {
+      background: rgba(255, 255, 255, .7);
+      backdrop-filter: blur(6px);
+    }
+    .btn {
+      transition: transform .06s ease, opacity .2s ease;
+    }
+    .btn:active {
+      transform: translateY(1px);
+    }
+    .card {
+      box-shadow: 0 12px 30px rgba(2, 6, 23, .08);
+    }
+    .locked::after {
+      content: "Daftar dulu untuk mengakses";
+      position: absolute;
+      inset: auto 1rem 1rem 1rem;
+      background: rgba(30, 58, 138, .9);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: .75rem;
+      padding: .5rem .75rem;
+      font-size: .85rem;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 border-b bg-white/80 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3">
+      <a href="#" class="flex items-center gap-3">
+        <img src="images/Teaching-Movement-2.png" alt="Teaching Movement" class="h-9 w-9 object-contain">
+        <span class="font-bold">Teaching <span class="text-[var(--brand)]">Movement</span></span>
+      </a>
+      <nav class="hidden gap-6 md:flex">
+        <a href="#hero" class="hover:text-[var(--brand)]">Home</a>
+        <a href="#tentang" class="hover:text-[var(--brand)]">Tentang</a>
+        <a href="#fitur" class="hover:text-[var(--brand)]">Fitur & Layanan</a>
+        <a href="#daftar" class="hover:text-[var(--brand)]">Daftar</a>
+      </nav>
+      <a href="#daftar" class="btn rounded-xl bg-[var(--brand)] px-4 py-2 text-white hover:opacity-90">Daftar</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="relative border-b bg-[var(--soft-blue)]">
+    <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 py-16 md:grid-cols-2">
+      <div>
+        <h1 class="text-4xl font-extrabold leading-tight text-[var(--brand-dark)] md:text-5xl">
+          Belajar jadi lebih mudah bersama <span class="text-[var(--brand)]">Teaching Movement</span>
+        </h1>
+        <p class="mt-4 text-slate-600">
+          Bimbingan belajar untuk mahasiswa: pengetahuan umum, materi teks, video, dan gambar. Materi terkurasi, ringkas, dan to the point.
+        </p>
+        <div class="mt-6 flex gap-3">
+          <a href="#daftar" class="btn rounded-xl bg-[var(--brand)] px-5 py-3 font-semibold text-white hover:opacity-90">Mulai Sekarang</a>
+          <a href="#fitur" class="btn rounded-xl border border-[var(--brand)] px-5 py-3 font-semibold text-[var(--brand)] hover:bg-[var(--brand)]/10">Lihat Fitur</a>
+        </div>
+      </div>
+      <div class="order-first md:order-none">
+        <div class="card rounded-2xl bg-white p-4">
+          <img class="h-64 w-full rounded-xl object-cover"
+               src="https://images.unsplash.com/photo-1554774853-b415df9eeb92?q=80&w=1600&auto=format&fit=crop"
+               alt="Ilustrasi belajar bersama">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section id="tentang" class="py-16">
+    <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 md:grid-cols-2">
+      <img src="https://images.unsplash.com/photo-1584697964158-3d6a4f6b7a5a?q=80&w=1600&auto=format&fit=crop"
+           alt="Mahasiswa belajar"
+           class="rounded-xl card">
+      <div>
+        <h2 class="text-3xl font-bold text-[var(--brand-dark)]">Tentang Teaching Movement</h2>
+        <p class="mt-3 text-slate-600">
+          Kami membantu mahasiswa menguasai pengetahuan umum melalui materi yang ringkas dan mudah dicerna. Konten kami hadir dalam bentuk teks, video, dan gambar—agar kamu bisa belajar sesuai gaya belajar masing-masing.
+        </p>
+        <ul class="mt-5 grid gap-3 text-slate-700">
+          <li>• Materi terstruktur dari dasar hingga lanjut</li>
+          <li>• Ringkas, langsung ke inti</li>
+          <li>• Akses di perangkat apa pun</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FITUR & LAYANAN -->
+  <section id="fitur" class="border-y bg-[var(--soft-blue)] py-16">
+    <div class="mx-auto max-w-7xl px-6">
+      <h2 class="text-center text-3xl font-bold text-[var(--brand-dark)]">Fitur & Layanan</h2>
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+
+        <!-- Program -->
+        <article class="relative card rounded-2xl bg-white p-6">
+          <div id="program-lock" class="absolute inset-0 rounded-2xl bg-white/50 backdrop-blur-sm flex items-center justify-center"></div>
+          <h3 class="text-xl font-semibold text-[var(--brand)]">Program</h3>
+          <p class="mt-2 text-slate-600">Kumpulan materi: akses soal, artikel teks, video, dan gambar.</p>
+          <div id="program-list" class="mt-5 grid gap-3">
+            <button class="w-full rounded-lg border px-4 py-3 text-left hover:bg-slate-50">Akses Soal</button>
+            <button class="w-full rounded-lg border px-4 py-3 text-left hover:bg-slate-50">Materi Teks</button>
+            <button class="w-full rounded-lg border px-4 py-3 text-left hover:bg-slate-50">Video Pembelajaran</button>
+            <button class="w-full rounded-lg border px-4 py-3 text-left hover:bg-slate-50">Gambar & Infografis</button>
+          </div>
+          <div id="program-cta" class="mt-4">
+            <a href="#daftar" class="inline-block rounded-lg bg-[var(--brand)] px-4 py-2 text-white hover:opacity-90">Daftar untuk membuka</a>
+            <p class="mt-2 text-xs text-slate-500">Belum daftar? Program akan tetap terkunci.</p>
+          </div>
+        </article>
+
+        <!-- Tryout -->
+        <article class="card rounded-2xl bg-white p-6">
+          <h3 class="text-xl font-semibold text-[var(--brand)]">Tryout</h3>
+          <p class="mt-2 text-slate-600">Simulasi soal bergaya ujian—cocok untuk cek kesiapan.</p>
+          <a href="#daftar" class="mt-4 inline-block rounded-lg border border-[var(--brand)] px-4 py-2 text-[var(--brand)] hover:bg-[var(--brand)]/10">Coba setelah daftar</a>
+        </article>
+
+        <!-- Blog -->
+        <article class="card rounded-2xl bg-white p-6">
+          <h3 class="text-xl font-semibold text-[var(--brand)]">Blog</h3>
+          <p class="mt-2 text-slate-600">Tips belajar, rangkuman materi, dan wawasan kampus.</p>
+          <a href="#" class="mt-4 inline-block rounded-lg bg-[var(--brand)] px-4 py-2 text-white hover:opacity-90">Baca artikel</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM PENDAFTARAN -->
+  <section id="daftar" class="py-16">
+    <div class="mx-auto max-w-4xl px-6">
+      <h2 class="text-center text-3xl font-bold text-[var(--brand-dark)]">Daftar untuk Membuka Program</h2>
+      <p class="mt-2 text-center text-slate-600">Isi data di bawah, lalu Program akan otomatis terbuka.</p>
+
+      <div id="form-success" class="mt-6 hidden rounded-lg border border-green-200 bg-green-50 px-4 py-3 text-green-700">
+        Pendaftaran berhasil! Program sudah terbuka. Selamat belajar 🎉
+      </div>
+      <div id="form-error" class="mt-6 hidden rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-red-700">
+        Maaf, terjadi kesalahan. Coba lagi ya.
+      </div>
+
+      <form id="tm-form" class="mt-6 rounded-2xl bg-[var(--soft-blue)] p-6">
+        <div class="grid gap-4 md:grid-cols-2">
+          <input name="nama" type="text" placeholder="Nama Lengkap" required
+                 class="rounded-lg border border-slate-300 px-4 py-3 outline-none focus:border-[var(--brand)] bg-white">
+          <input name="email" type="email" placeholder="Email" required
+                 class="rounded-lg border border-slate-300 px-4 py-3 outline-none focus:border-[var(--brand)] bg-white">
+          <input name="telepon" type="text" placeholder="Nomor HP / WhatsApp" required
+                 class="rounded-lg border border-slate-300 px-4 py-3 outline-none focus:border-[var(--brand)] bg-white md:col-span-2">
+          <textarea name="pesan" rows="4" placeholder="Pesan / Motivasi (opsional)"
+                    class="rounded-lg border border-slate-300 px-4 py-3 outline-none focus:border-[var(--brand)] bg-white md:col-span-2"></textarea>
+        </div>
+        <button type="submit" class="btn mt-5 w-full rounded-xl bg-[var(--brand)] px-5 py-3 font-semibold text-white hover:opacity-90">
+          Kirim Pendaftaran
+        </button>
+        <p class="mt-3 text-center text-xs text-slate-500">
+          Dengan menekan tombol ini, kamu menyetujui ketentuan privasi Teaching Movement.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t bg-[var(--soft-blue)]">
+    <div class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-6 py-8 md:grid-cols-3">
+      <div>
+        <div class="text-lg font-bold">Teaching <span class="text-[var(--brand)]">Movement</span></div>
+        <p class="mt-2 text-sm text-slate-600">Belajar cerdas dengan materi ringkas dan menyenangkan.</p>
+      </div>
+      <div>
+        <div class="font-semibold text-slate-700">Tautan</div>
+        <ul class="mt-2 space-y-2 text-sm">
+          <li><a href="#tentang" class="hover:text-[var(--brand)]">Tentang</a></li>
+          <li><a href="#fitur" class="hover:text-[var(--brand)]">Fitur & Layanan</a></li>
+          <li><a href="#daftar" class="hover:text-[var(--brand)]">Daftar</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold text-slate-700">Kontak</div>
+        <p class="mt-2 text-sm text-slate-600">
+          Email: <a class="text-[var(--brand)]" href="mailto:senahikari4@gmail.com">senahikari4@gmail.com</a>
+        </p>
+        <p class="text-sm text-slate-600">© <span id="year"></span> Teaching Movement</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const lock = document.getElementById('program-lock');
+    const programCTA = document.getElementById('program-cta');
+    const form = document.getElementById('tm-form');
+    const ok = document.getElementById('form-success');
+    const err = document.getElementById('form-error');
+
+    function setProgramOpen(open) {
+      if (open) {
+        lock?.remove();
+        programCTA?.classList.add('hidden');
+        localStorage.setItem('tm_registered', 'true');
+      } else {
+        localStorage.removeItem('tm_registered');
+      }
+    }
+
+    if (localStorage.getItem('tm_registered') === 'true') {
+      setProgramOpen(true);
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      ok.classList.add('hidden');
+      err.classList.add('hidden');
+
+      const data = new FormData(form);
+      try {
+        const res = await fetch('https://formspree.io/f/mdkdjwvg', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: data
+        });
+
+        if (res.ok) {
+          form.reset();
+          ok.classList.remove('hidden');
+          setProgramOpen(true);
+          setTimeout(() => {
+            document.querySelector('#fitur').scrollIntoView({ behavior: 'smooth' });
+          }, 400);
+        } else {
+          err.classList.remove('hidden');
+        }
+      } catch {
+        err.classList.remove('hidden');
+      }
+    });
+  </script>
+
+</body>
+</html>
